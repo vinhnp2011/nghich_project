@@ -1,10 +1,14 @@
 package vinhnp201195.myProject;
 
+import vinhnp201195.myProject.view.Menu;
+import vinhnp201195.myProject.view.MenuView;
+
 public class Index {
 
     public static void main(String[] args) {
 	// write your code here
-        System.out.println("hello");
-	    System.out.println("hello1111");
+        MenuView menuView = new MenuView();
+        menuView.MenuSchoolManagement();
     }
+
 }
