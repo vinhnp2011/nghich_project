@@ -1,29 +1,30 @@
 package vinhnp201195.myProject.view;
 
-public class InstructorView extends Menu {
+public class InstructorView extends MenuBasicView{
 
-    public void Menu()
+    public void startMenuInstructorView()
     {
-        super.Menu();
+        Menu();
+        GeneralMenuChoose();
     }
 
     @Override
-    public void Create() {
+    public void Menu() {
+        System.out.println("---------- Menu Instructor ----------");
+        System.out.println("1. Them");
+        System.out.println("2. Sua");
+        System.out.println("3. Xoa");
+        System.out.println("4. Thoat");
+        System.out.println("-------------------------------------");
+    }
+
+    @Override
+    public void GeneralMenu() {
 
     }
 
     @Override
-    public void Read() {
-
-    }
-
-    @Override
-    public void Update() {
-
-    }
-
-    @Override
-    public void Delete() {
+    public void GeneralMenuChoose() {
 
     }
 }

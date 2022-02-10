@@ -1,12 +1,13 @@
 package vinhnp201195.myProject.controller;
 
+import vinhnp201195.myProject.model.StudentModel;
 import vinhnp201195.myProject.model.SubjectModel;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
-public class SubjectController implements ControllerInterface{
+public class StudentController implements ControllerInterface{
     ArrayList<SubjectModel> listSubjectModel = new ArrayList<SubjectModel>();
+    ArrayList<StudentModel> listStudentModel = new ArrayList<StudentModel>();
 
     @Override
     public void Create() {

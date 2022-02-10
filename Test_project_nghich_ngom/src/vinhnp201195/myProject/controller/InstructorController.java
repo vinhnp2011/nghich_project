@@ -3,9 +3,8 @@ package vinhnp201195.myProject.controller;
 import vinhnp201195.myProject.model.SubjectModel;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
-public class SubjectController implements ControllerInterface{
+public class InstructorController implements ControllerInterface{
     ArrayList<SubjectModel> listSubjectModel = new ArrayList<SubjectModel>();
 
     @Override

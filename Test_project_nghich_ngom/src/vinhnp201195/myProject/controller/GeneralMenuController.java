@@ -4,24 +4,24 @@ import vinhnp201195.myProject.view.InstructorView;
 import vinhnp201195.myProject.view.StudentView;
 import vinhnp201195.myProject.view.SubjectView;
 
-public class MenuController
+public class GeneralMenuController
 {
     public void Student()
     {
         StudentView studentView = new StudentView();
-        studentView.Menu();
+        studentView.startMenuStudentView();
     }
 
     public void Instructor()
     {
         InstructorView instructorView = new InstructorView();
-        instructorView.Menu();
+        instructorView.startMenuInstructorView();
     }
 
     public void Subject()
     {
         SubjectView subjectView = new SubjectView();
-        subjectView.Menu();
+        subjectView.startMenuSubjectView();
     }
 
 }
