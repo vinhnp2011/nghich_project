@@ -13,4 +13,27 @@ public class PersonModel {
         this.birthPer = birthPer;
     }
 
+    public String getFullNamePer() {
+        return fullNamePer;
+    }
+
+    public void setFullNamePer(String fullNamePer) {
+        this.fullNamePer = fullNamePer;
+    }
+
+    public int getSexPer() {
+        return sexPer;
+    }
+
+    public void setSexPer(int sexPer) {
+        this.sexPer = sexPer;
+    }
+
+    public String getBirthPer() {
+        return birthPer;
+    }
+
+    public void setBirthPer(String birthPer) {
+        this.birthPer = birthPer;
+    }
 }

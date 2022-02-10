@@ -1,14 +1,15 @@
 package vinhnp201195.myProject.view;
 
 import vinhnp201195.myProject.controller.SubjectController;
+import vinhnp201195.myProject.model.SubjectModel;
 
 import java.util.Scanner;
 
-public class SubjectView extends MenuBasicView{
+public class SubjectView extends MenuBasicView {
     SubjectController subjectController = new SubjectController();
     int choose;
-    public void startMenuSubjectView()
-    {
+
+    public void startMenuSubjectView() {
         GeneralMenuChoose();
     }
 
@@ -28,6 +29,7 @@ public class SubjectView extends MenuBasicView{
         System.out.println("--------------------------------------");
         System.out.print("Ban chon cai nao:");
     }
+
     @Override
     public void GeneralMenuChoose() {
         String string1 = new String("--> Ban da chon: ");
@@ -38,6 +40,8 @@ public class SubjectView extends MenuBasicView{
             switch (choose) {
                 case 1:
                     System.out.println(string1 + "Them");
+                    SubjectModel subjectModel = addSubject();
+                    subjectController.Catch(subjectModel);
                     subjectController.Create();
                     break;
                 case 2:
@@ -63,5 +67,18 @@ public class SubjectView extends MenuBasicView{
                 break;
             }
         }
+    }
+
+    private SubjectModel addSubject() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("ID mon hoc:");
+        int idSubjView = scanner.nextInt();
+        String c = scanner.nextLine();
+        System.out.println("Ten mon:");
+        String nameSubjView = scanner.nextLine();
+        System.out.println("So hoc sinh toi da:");
+        int maxStuSubjView = scanner.nextInt();
+        SubjectModel subjectModel = new SubjectModel(idSubjView, nameSubjView, maxStuSubjView);
+        return subjectModel;
     }
 }
